@@ -12,8 +12,10 @@ body {
   
   input {
     width: 200px;
-    font-size: 1.5em;
+    font-size: 1rem;
     margin-bottom: 10px;
+    height: 5vh;
+    padding: 1rem;
   }
   
   .buttons {

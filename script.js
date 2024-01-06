@@ -16,7 +16,29 @@ function updateDisplay(){
 }
 
 function calculate(){
+    // console.log(math.evaluate(displayValue).toString());
+    // USING eval() function
+    // try{
+    // const result=eval(displayValue).toString();
+    // displayValue=result;
+    // updateDisplay();
+    // }
+    // catch(error){
+    //     displayValue="error";
+    //     updateDisplay();
+    // } 
 
+    // USING math.js library of js, firstly add its script in html file, then write here.
+    //In this we are using evaluate function of math.js
+    try{
+    const result=math.evaluate(displayValue).toString();
+    displayValue=result;
+    updateDisplay();
+    }
+    catch (error) {
+        displayValue = 'Error, enter valid expression';
+        updateDisplay();
+      }
 }
 function clearDisplay(){
     displayValue='';
